@@ -2,14 +2,15 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
+    text-align: justify;
 }
 /*PAGINA DE INICIAL E DE HABILIDADES*/
 header{
     background-color: #1933b6d3;
     color: white;
-    padding: 30px;
+    padding: 3%;
     display: grid;
-    grid-template-columns: 1fr 0.5fr 2fr 0.5fr;
+    grid-template-columns: 1fr 0.2fr 2.5fr 0.2fr;
     min-height: 15vh;
     gap: 10%;
 }
@@ -81,6 +82,10 @@ p::first-letter{
 
 span{
     font-size: small;
+}
+.linkhabilidadesecursos{
+    color: #1933b6d3;
+    text-align: justify;
 }
 
 /*PAGINA DE PROJETO*/
