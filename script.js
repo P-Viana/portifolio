@@ -26,20 +26,22 @@ function darkMode()
     testa = 0;
    }
 }
-//O código para o modal está aqui embaixo
-// para pegar o model
-var modal = document.getElementById("modalResposta");
 
-// Get the button that opens the modal
-var btn = document.querySelector("#submit");
 
-// Get the <span> element that closes the modal
-var span = document.querySelector(".close");
 
-function mostrar(){
-  modal.classList.toggle("show")
+
+//Código para o Typing Effect
+var i = 0;
+var txt = 'Bem-vindo ao meu portfólio!'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("escrevertexto").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
 }
 
-span.addEventListener("click", ()=>{
-  modal.classList.toggle("show")
-})  
+typeWriter()
